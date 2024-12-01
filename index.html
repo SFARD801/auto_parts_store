@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Parts Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Auto Parts Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h2>Find Your Perfect Auto Parts</h2>
+        </section>
+
+        <section class="search-bar">
+            <h3>Find Your Auto Parts</h3>
+            <form id="search-form">
+                <select name="year" id="year">
+                    <option value="" disabled selected>Year</option>
+                    <option value="1403">1403</option>
+                    <option value="1402">1402</option>
+                    <option value="1401">1401</option>
+                </select>
+                <select name="make" id="make">
+                    <option value="" disabled selected>Make</option>
+                    <option value="IKCO">IKCO</option>
+                    <option value="SAIPA">SAIPA</option>
+                    <option value="MVM">MVM</option>
+                </select>
+                <select name="model" id="model">
+                    <option value="" disabled selected>Model</option>
+                    <option value="Samand">Samand</option>
+                    <option value="Shahin">Shahin</option>
+                    <option value="530">530</option>
+                </select>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section class="categories">
+            <h3>Shop by Category</h3>
+            <div class="category-grid">
+                <div class="category-item">
+                    <img src="img/engine.jpg" alt="Engine Parts">
+                    <h4>Engine Parts</h4>
+                </div>
+                <div class="category-item">
+                    <img src="img/brake.jpg" alt="Brake System">
+                    <h4>Brake System</h4>
+                </div>
+                <div class="category-item">
+                    <img src="img/transmission.jpg" alt="Transmission">
+                    <h4>Transmission</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Auto Parts Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
