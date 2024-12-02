@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auto Parts Store</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
 
@@ -49,20 +50,22 @@
             </form>
         </section>
 
+        <section class="search-results" id="search-results"></section>        
+
         <section class="categories">
             <h3>Shop by Category</h3>
             <div class="category-grid">
-                <div class="category-item">
+                <div class="category-item" data-category="engine">
                     <img src="img/engine.jpg" alt="Engine Parts">
                     <h4>Engine Parts</h4>
                 </div>
-                <div class="category-item">
+                <div class="category-item" data-category="brake">
                     <img src="img/brake.jpg" alt="Brake System">
                     <h4>Brake System</h4>
                 </div>
-                <div class="category-item">
-                    <img src="img/transmission.jpg" alt="Transmission">
-                    <h4>Transmission</h4>
+                <div class="category-item" data-category="clutch kit">
+                    <img src="img/clutch-kit.jpg" alt="Clutch Kit">
+                    <h4>Clutch Kit</h4>
                 </div>
             </div>
         </section>
