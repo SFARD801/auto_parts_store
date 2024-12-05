@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "name": "Head Gasket",
+        "category": "engine",
+        "price": 1899000,
+        "compatibility": {
+            "year": [1401,1402,1403],
+            "make": ["IKCO"],
+            "model": ["Samand"]
+        }
+    },
+    {
+        "id": 2,
+        "name": "Brake Pads",
+        "category": "brake",
+        "price": 790000,
+        "compatibility": {
+            "year": [1401,1402,1403],
+            "make": ["SAIPA"],
+            "model": ["Shahin"]
+        }
+    },
+    {
+        "id": 3,
+        "name": "Clutch Kit",
+        "category": "clutch kit",
+        "price": 7950000,
+        "compatibility": {
+            "year": [1401,1402,1403],
+            "make": ["MVM"],
+            "model": ["530"]
+        }
+    }
+]
