@@ -1,35 +1,67 @@
 [
     {
         "id": 1,
-        "name": "Head Gasket",
+        "name": "واشرسرسیلندر فلزی",
         "category": "engine",
         "price": 1899000,
+        "image": "img/head-gasket.jpg",
+        "description": "واشرسرسیلندر اورجینال مخصوص سمند",
+        "year": "1402",
         "compatibility": {
-            "year": [1401,1402,1403],
             "make": ["IKCO"],
             "model": ["Samand"]
         }
     },
     {
         "id": 2,
-        "name": "Brake Pads",
+        "name": "لنت ترمز تکستار",
         "category": "brake",
         "price": 790000,
+        "image": "img/brake-pads.jpg",
+        "description": "لنت ترمز تکستار شرکتی مخصوص سمند",
+        "year": "1403",
         "compatibility": {
-            "year": [1401,1402,1403],
+            "make": ["IKCO"],
+            "model": ["Samand"]
+        }
+    },
+    {
+        "id": 3,
+        "name": "کیت کلاچ والئو",
+        "category": "clutch kit",
+        "price": 7950000,
+        "image": "img/valeo-clutch-kit.jpg",
+        "description": "کیت کلاج والئو فرانسه مخصوص ام وی ام 530",
+        "year": "1401",
+        "compatibility": {
+            "make": ["MVM"],
+            "model": ["530"]
+        }
+    },
+    {
+        "id": 4,
+        "name": "گیریکس سی وی تی",
+        "category": "transmission",
+        "price": 8000000,
+        "image": "img/cvt-gearbox.jpg",
+        "description": "گیربکس سی وی تی شرکتی مخصوص شاهین",
+        "year": "1403",
+        "compatibility": {
             "make": ["SAIPA"],
             "model": ["Shahin"]
         }
     },
     {
-        "id": 3,
-        "name": "Clutch Kit",
-        "category": "clutch kit",
-        "price": 7950000,
+        "id": 5,
+        "name": "موتور کامل شرکتی",
+        "category": "engine",
+        "price": 790000,
+        "image": "img/ef7-engine.jpg",
+        "description": "موتور کامل سمند موتور ملی شرکتی",
+        "year": "1402",
         "compatibility": {
-            "year": [1401,1402,1403],
-            "make": ["MVM"],
-            "model": ["530"]
+            "make": ["IKCO"],
+            "model": ["Samand"]
         }
     }
 ]

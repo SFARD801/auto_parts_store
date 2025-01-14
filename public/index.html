@@ -3,82 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASLINCO</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <title>اصلینکو</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="js/myscript.js" defer></script>
 </head>
 <body>
-
-    <header>
-        <div class="logo">
-            <img src="img/header-logo.webp" alt="Logo">
-        </div>
-        <div class="title">
-            <img src="img/header-title.webp" alt="Header Title">
-        </div>
-        <div class="info">
-            <div class="links">
-                <a href="#login">Login</a>
-                <a href="#cart">Cart</a>
+    <header class="container-fluid bg- py-3">
+        <div class="row align-items-center">
+            <div class="col-2 text-start ">
+                <img src="img/header-logo.webp" alt="Logo" class="img-fluid" style="max-height: 50px;">
             </div>
-            <div class="contact">
-                <span><b>Contact Us: +413-280-3003</b></span>
+            <div class="col-8 text-center">
+                <img src="img/header-title.webp" alt="Header Title" class="img-fluid" style="max-height: 60px;">
+            </div>
+            <div class="col-2 text-end">
+                <div class="d-flex flex-column align-items-end">
+                    <a href="#login" class="text-decoration-none text-white mb-2">ورود</a>
+                    <a href="#cart" class="text-decoration-none text-white mb-2">سبد خرید</a>
+                    <p class="mb-0"><b>📞 +413-280-3003</b></p>
+                </div>
             </div>
         </div>
     </header>
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand text-danger" href="index.html">اصلینکو</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">خانه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">مقالات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">درباره ما</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <main>
-        <section class="banner">
-            <img src="img/banner.jpg" alt="Banner">
+        <section class="banner d-flex align-items-center justify-content-center">
+            <img src="img/banner.jpg" class="img-fluid" alt="Banner">
         </section>
-
-        <section class="search-bar">
-            <h3>Find Your Auto Parts</h3>
-            <form id="search-form">
-                <select name="year" id="year">
-                    <option value="" disabled selected>Year</option>
-                    <option value="1403">1403</option>
-                    <option value="1402">1402</option>
-                    <option value="1401">1401</option>
-                </select>
-                <select name="make" id="make">
-                    <option value="" disabled selected>Make</option>
-                    <option value="IKCO">IKCO</option>
-                    <option value="SAIPA">SAIPA</option>
-                    <option value="MVM">MVM</option>
-                </select>
-                <select name="model" id="model">
-                    <option value="" disabled selected>Model</option>
-                    <option value="Samand">Samand</option>
-                    <option value="Shahin">Shahin</option>
-                    <option value="530">530</option>
-                </select>
-                <button type="submit">Search</button>
+        <div class="container my-4">
+            <h3 class="row g-3 justify-content-center">انتخاب مدل خودرو</h3>
+            <form id="search-form" class="row g-3 justify-content-center">
+                <div class="col-auto">
+                    <select class="form-select" name="year" id="year">
+                        <option value="" disabled selected>Year</option>
+                        <option value="1403">1403</option>
+                        <option value="1402">1402</option>
+                        <option value="1401">1401</option>
+                    </select>
+                </div>
+                <div class="col-auto">
+                    <select class="form-select" name="make" id="make">
+                        <option value="" disabled selected>Make</option>
+                        <option value="IKCO">IKCO</option>
+                        <option value="SAIPA">SAIPA</option>
+                        <option value="MVM">MVM</option>
+                    </select>
+                </div>
+                <div class="col-auto">
+                    <select class="form-select" name="model" id="model">
+                        <option value="" disabled selected>Model</option>
+                        <option value="Samand">Samand</option>
+                        <option value="Shahin">Shahin</option>
+                        <option value="530">530</option>
+                    </select>
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-primary" type="submit">جستجو</button>
+                </div>
             </form>
-        </section>
-
-        <section class="search-results" id="search-results"></section>        
-
-        <section class="categories">
-            <h3>Shop by Category</h3>
-            <div class="category-grid">
-                <div class="category-item" data-category="engine">
-                    <img src="img/engine.jpg" alt="Engine Parts">
-                    <h4>Engine Parts</h4>
+        </div>
+        <div class="container my-4">
+            <div class="row">
+                <div class="col-md-3" id="category">
+                    <section class="bg-white p-3 text-center" id="category-grid">
+                        <h3>دسته بندی ها</h3>
+                        <div class="category-item mb-4 mt-4" data-category="engine">
+                            <img src="img/engine.jpg" alt="Engine Parts" class="img-fluid rounded">
+                            <h4>قطعات موتور</h4>
+                        </div>
+                        <div class="category-item mb-4 mt-4" data-category="brake">
+                            <img src="img/brake.jpg" alt="Brake System" class="img-fluid rounded">
+                            <h4>قطعات ترمز</h4>
+                        </div>
+                        <div class="category-item mb-4 mt-4" data-category="clutch kit">
+                            <img src="img/clutch-kit.jpg" alt="Clutch Kit" class="img-fluid rounded">
+                            <h4>کیت کلاچ</h4>
+                        </div>
+                        <div class="category-item mb-4 mt-4" data-category="transmission">
+                            <img src="img/transmission.jpg" alt="Transmission" class="img-fluid rounded">
+                            <h4>قطعات گیربکس</h4>
+                        </div>
+                        <div class="category-item mb-4 mt-4" data-category="electronics">
+                            <img src="img/electronics.jpg" alt="Electronics" class="img-fluid rounded">
+                            <h4>قطعات برقی</h4>
+                        </div>
+                        <div class="category-item mb-4 mt-4" data-category="ignition">
+                            <img src="img/ignition.jpg" alt="Ignition" class="img-fluid rounded">
+                            <h4>احتراق و سوخت رسانی</h4>
+                        </div>
+                        <div class="category-item mb-4 mt-4" data-category="cooling">
+                            <img src="img/cooling.jpg" alt="Cooling" class="img-fluid rounded">
+                            <h4>قطعات خنک کاری</h4>
+                        </div>
+                        <div class="category-item mb-4 mt-4" data-category="bodyparts">
+                            <img src="img/bodyparts.jpg" alt="Body Parts" class="img-fluid rounded">
+                            <h4>قطعات بدنه</h4>
+                        </div>
+                        <div class="category-item mb-4 mt-4" data-category="fluids">
+                            <img src="img/fluids.jpg" alt="Fluids" class="img-fluid rounded">
+                            <h4>سیالات</h4>
+                        </div>
+                    </section>
                 </div>
-                <div class="category-item" data-category="brake">
-                    <img src="img/brake.jpg" alt="Brake System">
-                    <h4>Brake System</h4>
-                </div>
-                <div class="category-item" data-category="clutch kit">
-                    <img src="img/clutch-kit.jpg" alt="Clutch Kit">
-                    <h4>Clutch Kit</h4>
+                <div class="col-md-9">
+                    <section class="search-results bg-white p-3 text-center border" id="search-results">
+                        <h3>محصولات</h3>
+                        <div class="container">
+                            <div class="row"></div>
+                        </div>
+                    </section>
                 </div>
             </div>
-        </section>
+        </div>    
     </main>
     <footer>
-        <p>&copy; 2024 Auto Parts Store. All rights reserved.</p>
+        <p>&copy; 2024 Aslinco. All rights reserved.</p>
     </footer>
 </body>
 </html>
